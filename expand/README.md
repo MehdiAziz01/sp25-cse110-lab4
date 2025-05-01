@@ -1,1 +1,0 @@
-# Expansion write-up
