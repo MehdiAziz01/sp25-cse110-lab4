@@ -48,7 +48,7 @@ The values read from the input fields were still strings, so when `calculateSum`
 **b) How would you fix it?**  
 Convert the inputs to numbers before passing them to `calculateSum`. For example:
 
-```js
+```js```
 function printSum() {
   // …
   let num1 = Number(document.getElementById("num1").value);
@@ -56,4 +56,7 @@ function printSum() {
   document.getElementById("sum").innerHTML =
     "Sum: " + calculateSum(num1, num2);
 }
+
+<img width="1920" alt="fix" src="https://github.com/user-attachments/assets/660e074c-7ef7-47ce-91b3-ff47b80cb2cf" />
+
 
