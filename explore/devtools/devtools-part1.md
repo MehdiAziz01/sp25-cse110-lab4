@@ -43,10 +43,17 @@
 ## Questions
 
 **a) What was the bug?**  
-_Your answer here (e.g. “The inputs from the DOM were read as strings, so `result = num1 + num2` was doing string concatenation instead of numeric addition.”)_
+The values read from the input fields were still strings, so when `calculateSum` did `num1 + num2` it concatenated them (`"5" + "6" → "56"`) instead of adding them numerically.
 
 **b) How would you fix it?**  
-_Your answer here (e.g. “Coerce the inputs to numbers before adding: `let result = Number(num1) + Number(num2);`”)_
+Convert the inputs to numbers before passing them to `calculateSum`. For example:
 
-– Screenshot of your applied fix: `expand/screenshots/fix.png`
+```js
+function printSum() {
+  // …
+  let num1 = Number(document.getElementById("num1").value);
+  let num2 = Number(document.getElementById("num2").value);
+  document.getElementById("sum").innerHTML =
+    "Sum: " + calculateSum(num1, num2);
+}
 
