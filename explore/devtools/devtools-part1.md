@@ -38,25 +38,6 @@
 – Screenshot: `expand/screenshots/result-dataType.png`  
   *(Add watches for `num1`, `num2`, and `typeof result`.)*
 
----
 
-## Questions
-
-**a) What was the bug?**  
-The values read from the input fields were still strings, so when `calculateSum` did `num1 + num2` it concatenated them (`"5" + "6" → "56"`) instead of adding them numerically.
-
-**b) How would you fix it?**  
-Convert the inputs to numbers before passing them to `calculateSum`. For example:
-
-```js```
-function printSum() {
-  // …
-  let num1 = Number(document.getElementById("num1").value);
-  let num2 = Number(document.getElementById("num2").value);
-  document.getElementById("sum").innerHTML =
-    "Sum: " + calculateSum(num1, num2);
-}
-
-<img width="1920" alt="fix" src="https://github.com/user-attachments/assets/660e074c-7ef7-47ce-91b3-ff47b80cb2cf" />
 
 
