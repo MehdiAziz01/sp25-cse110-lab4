@@ -174,3 +174,21 @@ When called, `modifyArray` applies the callback `doSomething` (which doubles its
 4. For `i = 2`: `doSomething(3)` → `6`, so `newArr.push(6)`.  
 5. Loop ends and `newArr` (`[2, 4, 6]`) is returned.
 
+
+## Question 19  
+**What is the output of the following code?**
+
+```js
+function printNums() {
+  console.log(1);
+  setTimeout(function() { console.log(2); }, 1000);
+  setTimeout(function() { console.log(3); }, 0);
+  console.log(4);
+}
+
+printNums();
+Answer:
+1  
+4  
+3  
+2
