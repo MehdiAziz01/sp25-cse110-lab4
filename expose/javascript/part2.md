@@ -160,3 +160,17 @@ e) `student.courseLoad[0]`
 
 - `==` (loose equality) **performs type coercion** before comparing values.  
 - `===` (strict equality) **does not coerce**; both **value** and **type** must match.
+  
+
+## Question 17  
+**What is the result of `modifyArray([1,2,3], doSomething)`?**  
+
+When called, `modifyArray` applies the callback `doSomething` (which doubles its input) to each element of `[1,2,3]`, producing a new array. The function returns: [2, 4, 6]
+
+**Explanation:**  
+1. Start with `newArr = []`.  
+2. For `i = 0`: `doSomething(1)` → `2`, so `newArr.push(2)`.  
+3. For `i = 1`: `doSomething(2)` → `4`, so `newArr.push(4)`.  
+4. For `i = 2`: `doSomething(3)` → `6`, so `newArr.push(6)`.  
+5. Loop ends and `newArr` (`[2, 4, 6]`) is returned.
+
