@@ -1,14 +1,10 @@
 # DevTools, Part 2: Debugging
 
 ## 1. Breakpoint in `calculateSum()`
-– Screenshot: `../../expand/screenshots/result-calculateSum.png`  
-  *(Breakpoint set on the `let result = …` line.)*
+![Breakpoint on result initialization](../../expand/screenshots/result-calculateSum.png)
 
 ## 2. Watch Expressions
-– Screenshot: `../../expand/screenshots/result-dataType.png`  
-  *(Watching `num1`, `num2`, and `typeof result`.)*
-
----
+![Watching num1, num2, and typeof result](../../expand/screenshots/result-dataType.png)
 
 ## Questions
 
