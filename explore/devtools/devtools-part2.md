@@ -23,5 +23,6 @@ function calculateSum(num1, num2) {
   let result = Number(num1) + Number(num2);
   return result;
 }
+```
 
-
+<img width="1920" alt="fix" src="https://github.com/user-attachments/assets/660e074c-7ef7-47ce-91b3-ff47b80cb2cf" />
